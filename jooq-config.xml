@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.13.0.xsd">
+    
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/userdb</url>
+        <user>postgres</user>
+        <password>Samano31!</password>
+    </jdbc>
+
+    <generator>
+        <name>org.jooq.codegen.JavaGenerator</name>
+
+        <database>
+            <name>org.jooq.meta.postgres.PostgresDatabase</name>
+            <inputSchema>public</inputSchema>
+            <includes>.*</includes>
+            <excludes></excludes>
+            
+            
+        </database>
+
+        <target>
+            <packageName>com.dw.dwproject.api.model</packageName>
+            <directory>C:\Users\castr\OneDrive\Bureau\ArchitectLogiciels\P11\POC-urgence-hospitalisation\dwproject\src\main\java</directory>
+        </target>
+    </generator>
+</configuration>
